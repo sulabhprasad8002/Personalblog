@@ -1,1 +1,39 @@
-<router-outlet></router-outlet>
+
+<div style="width: 100vw;">
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+  
+    <img src="../assets/my_pic.jpg" alt="sulabh prasad" width="200px" height="200px" id="my-pic" />
+    <h2>Hi, I am Sulabh Prasad.</h2>
+    <p>
+      I am a Software Engineer with imense experience of developing web apps.
+    </p>
+    <p>
+      I have worked on Angular, Spring Boot, HTML & CSS, RabbitMQ, MySQL, etc.
+    </p>
+    <p>
+      I have created this website to share my engineering knowledge with those who are interested.
+    </p>
+    <p>
+      Want to talk? Contact me at sulabhprasad8002@gmail.com (7003513982)
+    </p>
+  </div>
+  <mat-toolbar class="intro-sec" color="primary">
+    <div>
+      <a [routerLink]="['/home']" routerLinkActive="router-link-active" >Home</a>
+      &#160;
+      &#160;
+      &#160;
+      <a [routerLink]="['/posts']" routerLinkActive="router-link-active" >Posts</a>
+      &#160;
+      &#160;
+      &#160;
+      <a (click)="openNav()" style="cursor: pointer;">About Me</a>
+    </div>
+    <a href="" id="logout-link">Logout</a>
+</mat-toolbar> 
+<div style="max-width: 100vw;overflow-x: hidden;">
+  <router-outlet></router-outlet>
+</div>
+    
+</div>

@@ -1,23 +1,50 @@
-<img src="../assets/my_pic.jpg" alt="sulabh prasad" width="200px" height="200px" id="my-pic" />
-<div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
-  <div class="overlay-content"> 
-    <a routerLink="/services">Services</a>
-    <a href="/clients">Clients</a>
-    <a href="/contact">Contact</a>
+<div class="column">
+  <div class="row">  
+    <mat-card class="recent-post">
+      <mat-card-title>
+        Which language is best for web development?
+      </mat-card-title>
+      <br><br>
+      <mat-card-content>
+        If we talk about the front end of the application then Javascript is the most commonly used language in the world.
+        Most of the frameworks like Angular, React, Vue are written on Javascript. 
+        When it comes to backend then you have got many options like Java with Spring, Javascript with Node.js, Python with Django.
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="recent-post">
+      <mat-card-title>
+        Use of messaging system in web.
+      </mat-card-title>
+      <br><br>
+      <mat-card-content>
+        Apis are used to fetch and update the data on web with some delay while messaging systems are used to transfer data in real time between web and other systems.
+        Modern messaging systems like RabbitMQ has inbuilt feature called queues keeps the data until it is consumed by a receiver.
+        Messages of different types are categorised as topics.
+      </mat-card-content>
+    </mat-card>
   </div>
-</div>
-<div class="intro-sec">
-  <h2>Hi, I am Sulabh Prasad.</h2>
-  <p>
-    I help startups bring their ideas to life. Powered by Angular, React, Spring, Node and coffee, I turn your
-    requirements into live working websites on time and on budget. 
-  </p>
-  <p>
-    I don't mind working on existing web sites as well 😜
-  </p>
-  <p>
-    Want to talk? Contact me at sulabhprasad8002@gmail.com (7003513982)
-  </p>
-  <span style="font-size:30px;cursor:pointer" (click)="openNav()">&#9776; Know more</span>
+  <div class="row">
+    <mat-card class="recent-post">
+      <mat-card-title>
+        What are ORMs ?
+      </mat-card-title>
+      <br><br>
+      <mat-card-content>
+        ORMs are frameworks that is used to manage databases with data that is in the form of objects.
+        We just need to create an object and set the values of that object to persist data into the database.
+        ORMs has its own syntax that helps persist and query data to and from a db.
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="recent-post">
+      <mat-card-title>
+        What is git and what are its uses?
+      </mat-card-title>
+      <br><br>
+      <mat-card-content>
+        Git is a version control system used by developers to keep track of their changes in a project.
+        It saves a project as repository on a server allows to make and revert changes to it using command line.
+        Some GUIs are also used for git.
+      </mat-card-content>
+    </mat-card>
+  </div>
 </div>

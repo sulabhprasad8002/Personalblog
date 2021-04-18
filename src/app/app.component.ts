@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'portfolio-fe';   
+  title = 'personalblog';   
+
+      
+ openNav() {
+  document.getElementById("myNav").style.width = "100%";
+  }
+
+ closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
 }
